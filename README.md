@@ -1,5 +1,4 @@
-# Data-Mining
-Khai thác dữ liệu và ứng dụng
+# Data-Mining - Khai thác dữ liệu và ứng dụng
 -------------
 # Thông tin thành viên
 https://docs.google.com/document/d/1fDgD-TUEee1ITDaUI9FP_4_sv1_06pu6f2UvECF2m74/edit?usp=sharing
