@@ -35,7 +35,7 @@ def main():
     with open(inputfile, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         fieldnames = csv_reader.fieldnames
-        input_filedname="Passenger_numbers"
+        input_filedname="passenger_numbers"
         data=[]
         for row in csv_reader:
             data.append(float(row[input_filedname]))
@@ -43,11 +43,12 @@ def main():
         length_data=len(data)
         for i in range(0,length_data):
             print(f'{data[i]} | {result[i]}')
-
+        
 def minMaxNorm(data,new_range=[0,1]): #hàm chuẩn hóa min max
     """Min-Max normalization fuction
-         Parameters:   data : a list values of an numeric attribute 𝐴 that need Min-Max normalization
-                       new_range: [New_Min,New_Max]  default value is [0,1] if nothing value passed
+         Parameters:   
+             data : a list values of an numeric attribute 𝐴 that need Min-Max normalization
+             new_range: [New_Min,New_Max]  default value is [0,1] if nothing value passed
        Return: An list hold all values that are normalized""" #day la phan mo ta ham
 
     min_num=min(data)
@@ -88,8 +89,7 @@ def variance(data): #hàm tính phương sai
     return d_sum/float(n-1)
 
 def stddev(data):
-    """Return standard deviation of sequence data.
-    """
+    "Return standard deviation of sequence data."
     return (variance(data))**0.5
 
 if __name__ == '__main__':
