@@ -34,7 +34,7 @@ def main():
     field_input=[]   
     with open(inputfile, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
-        fieldnames=csv_reader.fieldnames
+        fieldnames = csv_reader.fieldnames
         input_filedname="Passenger_numbers"
         data=[]
         for row in csv_reader:
@@ -44,44 +44,42 @@ def main():
         for i in range(0,length_data):
             print(f'{data[i]} | {result[i]}')
 
-def minMaxNorm(data,new_range=[0,1]):
+def minMaxNorm(data,new_range=[0,1]): #hàm chuẩn hóa min max
     """Min-Max normalization fuction
-         Parameters:
-           data : a list values of an numeric attribute 𝐴 that need Min-Max normalization
-           new_range: [New_Min,New_Max]  default value is [0,1] if nothing value passed
-       Return: An list hold all values that are normalized"""
+         Parameters:   data : a list values of an numeric attribute 𝐴 that need Min-Max normalization
+                       new_range: [New_Min,New_Max]  default value is [0,1] if nothing value passed
+       Return: An list hold all values that are normalized""" #day la phan mo ta ham
 
     min_num=min(data)
     max_num=max(data)
-    result=[]
+    result=[] #mang chua kq tinh từng dòng dữ liệu
     for i in data:
-        vi=((i-min_num)/(max_num-min_num))*(new_range[1]-new_range[0])+new_range[1]
+        vi=((i-min_num)/(max_num-min_num))*(new_range[1]-new_range[0])+new_range[1] #cong thuc tinh trong slide
         result.append(vi)
     return result
 
-def zScoreNorm(data):
+def zScoreNorm(data): #hàm chuẩn hóa Z-scores
     """Z-score normalization fuction
-         Parameters:
-           data : a list values of an numeric attribute 𝐴 that need Z-score normalization
-       Return an list hold all values that are normalized"""
+         Parameters:  data : a list values of an numeric attribute 𝐴 that need Z-score normalization
+       Return an list hold all values that are normalized""" 
     
     result=[]
-    d_mean=mean(data)
-    d_stddev=stddev(data)
+    d_mean=mean(data) 
+    d_stddev=stddev(data) #độ lệch chuẩn
     for i in data:
         vi=(i-d_mean)/d_stddev
         result.append(vi)
     return result
 
-def mean(data):
-    """Return the sample arithmetic mean of data """
+def mean(data): #hàm tính trung bình
+    "Return the sample arithmetic mean of data"
     n = len(data)
     if n < 1:
-        raise ValueError('mean requires at least one data point')
+        raise ValueError('mean requires at least one data point') 
     return sum(data)/float(n) 
 
-def variance(data):
-    """Return variance of sequence data"""
+def variance(data): #hàm tính phương sai
+    "Return variance of sequence data"
     d_mean = mean(data)
     d_sum = 0
     n = len(data)
