@@ -1,0 +1,15 @@
+country=country
+longName=longName
+foundingDate=foundingDate
+population=population
+capital=capital
+largestCity=largestCity
+area=areaSqMimi
+country=1
+name=Cyprus
+foundingDate=7/15/1974
+capital=Nicosia
+country=2
+country=3
+country=4
+country=5
