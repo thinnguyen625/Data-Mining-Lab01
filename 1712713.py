@@ -39,7 +39,6 @@ def main():
     data.clear()
     del data
 
-
 class Attribute:
     def __init__(self, name, data):
         self.name = name
@@ -68,7 +67,6 @@ class Attribute:
         self.data.clear()
         del self.data
 
-
 def checkNumber(x):
     if x == '':
         return False
@@ -76,7 +74,6 @@ def checkNumber(x):
         if i not in '0123456789.':
             return False
     return True
-
 
 def writeFieldInFile(fileOutput, data):
     if data:
@@ -88,7 +85,6 @@ def writeFieldInFile(fileOutput, data):
         return True
     return None
 
-
 def modifyDataToOutput(data):
     result = data
     numRow = len(result)
@@ -97,7 +93,6 @@ def modifyDataToOutput(data):
             if type(result[i][j]) != str:
                 result[i][j] = repr(result[i][j])
     return result
-
 
 def readFieldInFile(fileInput, fieldName):
     with open(fileInput, 'r') as readFile:
@@ -108,7 +103,6 @@ def readFieldInFile(fileInput, fieldName):
     readFile.close()
     return result
 
-
 def readAllInFile(fileInput):
     with open(fileInput, 'r') as readFile:
         csv_reader = csv.reader(readFile)
@@ -117,7 +111,6 @@ def readAllInFile(fileInput):
             result.append(row)
     readFile.close()
     return result
-
 
 def deleteMissingValue(data, fieldName):
     result = data
@@ -131,7 +124,6 @@ def deleteMissingValue(data, fieldName):
         else:
             i += 1
     return result
-
 
 def insertMissingValue(data, fieldName):
     result = data
@@ -152,7 +144,6 @@ def insertMissingValue(data, fieldName):
     attrData.clear()
     del attrData
     return result
-
 
 def frequence(data):
     freq = [[], []]
