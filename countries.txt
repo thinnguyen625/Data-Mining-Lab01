@@ -1,4 +1,4 @@
-﻿country=country
+country=country
 name=name
 longName=longName
 foundingDate=foundingDate
