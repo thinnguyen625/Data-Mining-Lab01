@@ -1,13 +1,14 @@
 import sys
 import csv
 import pandas as pd 
+import argparse
 
-def process_file_text():
-    with open("countries.txt", "r",encoding="utf8") as fi:
+def process_file_text(inputFile="countries.txt"):
+    with open(inputFile, "r",encoding="utf8") as fi:
         with open("fileConvert.csv", 'w',encoding="utf8",newline='') as writeFile:
             csv_writer = csv.writer(writeFile)
             i = 0
-            t = 0
+            t = 0   
             result = []
             data = []
             
@@ -120,28 +121,33 @@ def delete_no_area_set(data): #xóa tập bị thiếu diện tích
         
 def writeFieldInFile(fileOutput, data):
     if data:
-        with open(fileOutput, mode='w', newline='') as writeFile:
+        with open(fileOutput, mode='w',encoding='utf8', newline='') as writeFile:
             csv_writer = csv.writer(writeFile)
             csv_writer.writerows(data)
         writeFile.close()
         return True
     return None
 
-def main():
-    process_file_text()
-    file_in = "fileConvert.csv"
-    file_out = "19_B2.csv"
 
-    data = readAllInFile(file_in)
-    data_1 = delete_empty_set(data)
-    data_2 = delete_no_area_set(data_1)
-    data_3 = delete_duplicate_set(data_2)
-    data_4 = convert_area(data_3)
+parser = argparse.ArgumentParser()
+parser.add_argument("-i","--input", help="input file name")
+parser.add_argument("-o","--output", help="output file name")
+args = parser.parse_args()
+if args.input:
+    file_in = args.input
+else: file_in="countries.txt"
+if args.output:
+    file_out=args.output
+else:file_out = "19_B2.csv"
+process_file_text(file_in)
+csv_file='fileConvert.csv'
+data = readAllInFile(csv_file)
+data_1 = delete_empty_set(data)
+data_2 = delete_no_area_set(data_1)
+data_3 = delete_duplicate_set(data_2)
+data_4 = convert_area(data_3)
+writeFieldInFile(file_out, data_4)
+data.clear()
 
-    writeFieldInFile(file_out, data_4)
-    data.clear()
-
-if __name__ == '__main__':
-    main()
 
 

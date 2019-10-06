@@ -22,3 +22,6 @@ Lab01: Deadline 6/10
 - 6/10 chỉnh sửa phần còn thiếu - summit 23h trên moodle
 - Thìn: Code python
 - Quyền: Code python
+ 
+ code: 
+       python 19_B2.py --input countries.txt --output data.csv

@@ -4,7 +4,7 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 16,Abkhazia,Republic of Abkhazia,8/26/2008,242862,Sukhumi,,8660.968660968661km
 17,Abyei,Abyei Area,1/9/2005,,Abyei (town),,10546.490546490546km
 18,Abyei,Abyei Area,8/31/2008,,Abyei (town),,10546.490546490546km
-31,Ad�lie Land,Ad�lie Land,,,,,432000km
+31,Adélie Land,Adélie Land,,,,,432000km
 36,Adjara,Autonomous Republic of Ajara,,393700,Batumi,,2900.8029008029007km
 38,Aerica,Aerican Empire,5/8/1987,,Montreal,,9000000km
 41,Afghanistan,Islamic Republic of Afghanistan,8/19/1919,32564342,Kabul,Kabul,652232.5822325823km
@@ -14,7 +14,7 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 63,Akrotiri and Dhekelia,Sovereign Base Areas,,7700,Episkopi Cantonment,,253.8202538202538km
 64,Akrotiri and Dhekelia,of,,7700,Episkopi Cantonment,,253.8202538202538km
 65,Akrotiri and Dhekelia,Akrotiri and Dhekelia,,7700,Episkopi Cantonment,,253.8202538202538km
-68,�land,�land Islands,5/7/1920,28666,Mariehamn,,1579.90157990158km
+68,Åland,Åland Islands,5/7/1920,28666,Mariehamn,,1579.90157990158km
 73,,Republic of Albania,4/7/1939,2893005,Tirana,Tirana,28749.02874902875km
 74,,Republic of Albania,11/29/1941,2893005,Tirana,Tirana,28749.02874902875km
 82,Alderney,Alderney,,2013,"Saint Anne, Alderney",,7.77000777000777km
@@ -81,8 +81,8 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 415,Botswana,Republic of Botswana,9/30/1966,2155784,Gaborone,,581740.4817404817km
 417,Bouvet Island,Bouvet Island,1/23/1928,,,,49km
 418,Bouvet Island,Bouvet Island,12/1/1927,,,,49km
-423,Brazil,Federative Republic of Brazil,1822-09-07,205338000,Bras�lia,S�o Paulo,8514884.744884744km
-424,Brazil,Federative Republic of Brazil,1825-08-29,205338000,Bras�lia,S�o Paulo,8514884.744884744km
+423,Brazil,Federative Republic of Brazil,1822-09-07,205338000,Brasília,São Paulo,8514884.744884744km
+424,Brazil,Federative Republic of Brazil,1825-08-29,205338000,Brasília,São Paulo,8514884.744884744km
 430,the British Antarctic Territory,British Antarctic Territory,,250,London,,1709401.7094017095km
 431,the British Antarctic Territory,British Antarctic Territory,,250,Rothera Research Station,,1709401.7094017095km
 445,British Indian Ocean Territory,British Indian Ocean Territory,,3000,,,54400.414400414404km
@@ -94,11 +94,11 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 486,,,,27000000,,Accra,238535km
 492,,Burkina Faso,,17322796,Ouagadougou,,274200.9842009842km
 494,Burundi,Republic of Burundi,7/1/1962,11178921,Bujumbura,,27834km
-520,,,4/21/1907,50000,,S�o Gabriel da Cachoeira,160000km
-521,,,11/15/1928,50000,,S�o Gabriel da Cachoeira,160000km
+520,,,4/21/1907,50000,,São Gabriel da Cachoeira,160000km
+521,,,11/15/1928,50000,,São Gabriel da Cachoeira,160000km
 527,Cambodia,Kingdom of Cambodia,,15458332,Phnom Penh,,181036.00103600105km
-528,Cameroon,Republic of Cameroon,1/1/1960,22534532,Yaound�,,475444.18544418545km
-529,Cameroon,Republic of Cameroon,10/1/1961,22534532,Yaound�,,475444.18544418545km
+528,Cameroon,Republic of Cameroon,1/1/1960,22534532,Yaoundé,,475444.18544418545km
+529,Cameroon,Republic of Cameroon,10/1/1961,22534532,Yaoundé,,475444.18544418545km
 532,Canada,,1867-07-01,35985751,Ottawa,Toronto,9982090.132090133km
 533,Canada,,12/11/1931,35985751,Ottawa,Toronto,9982090.132090133km
 536,Canton 10,Canton 10,6/12/1996,,Livno,Livno,4934.213934213934km
@@ -119,8 +119,8 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 648,Cocos Islands,Territory of the,,596,"West Island, Cocos (Keeling) Islands",,13.727013727013727km
 653,the Collectivity of Saint Martin,Collectivity of Saint Martin,1648-03-23,,"Marigot, Saint Martin","Marigot, Saint Martin",53.095053095053096km
 654,the Collectivity of Saint Martin,Collectivity of Saint Martin,7/15/2007,,"Marigot, Saint Martin","Marigot, Saint Martin",53.095053095053096km
-656,Colombia,Republic of Colombia,1810-07-20,48400388,Bogot�,,1141753.4317534317km
-657,Colombia,Republic of Colombia,1819-08-07,48400388,Bogot�,,1141753.4317534317km
+656,Colombia,Republic of Colombia,1810-07-20,48400388,Bogotá,,1141753.4317534317km
+657,Colombia,Republic of Colombia,1819-08-07,48400388,Bogotá,,1141753.4317534317km
 686,Commander Islands,Commander Islands,,613,,,1844.081844081844km
 695,,Commonwealth of Independent States,5/15/1992,276917629,,Moscow,20996932km
 697,,,11/19/1926,2328000000,,,29958223.258223258km
@@ -128,13 +128,13 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 703,Comoros,Union of the Comoros,7/6/1975,798000,"Moroni, Comoros",,1882.931882931883km
 708,,Conch Republic,4/23/1982,,,,15.4km
 719,the Cook Islands,Cook Islands,8/4/1965,,Avarua,Avarua,235.69023569023568km
-726,Costa Rica,Republic of Costa Rica,1823-07-01,,"San Jos�, Costa Rica",,50901.3209013209km
-727,Costa Rica,Republic of Costa Rica,1821-09-15,,"San Jos�, Costa Rica",,50901.3209013209km
+726,Costa Rica,Republic of Costa Rica,1823-07-01,,"San José, Costa Rica",,50901.3209013209km
+727,Costa Rica,Republic of Costa Rica,1821-09-15,,"San José, Costa Rica",,50901.3209013209km
 812,Croatia,Republic of Croatia,,,Zagreb,,56594.146594146594km
 828,,Crozet Islands,,,,,352km
 829,Cuba,Republic of Cuba,1895-02-24,,Havana,,109883.44988344988km
 830,Cuba,Republic of Cuba,1898-12-10,,Havana,,109883.44988344988km
-833,Cura�ao,Country of Cura�ao,10/10/2010,152760,Willemstad,Willemstad,443.92644392644394km
+833,Curaçao,Country of Curaçao,10/10/2010,152760,Willemstad,Willemstad,443.92644392644394km
 838,Cyprus,Republic of Cyprus,2/19/1959,1141166,Nicosia,,9251.48925148925km
 839,Cyprus,Republic of Cyprus,8/16/1960,1141166,Nicosia,,9251.48925148925km
 842,Czech Republic,Czech Republic,,10541466,Prague,,78865.57886557886km
@@ -170,7 +170,7 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 1366,,,1/1/1958,508191116,Brussels,,4324782km
 1367,,,11/1/1993,508191116,Brussels,,4324782km
 1368,Falkland Islands,Falkland Islands,,2932,"Stanley, Falkland Islands",,12173.012173012174km
-1372,Faroe Islands,Faroe Islands,1814-01-14,49709,T�rshavn,,1398.6013986013986km
+1372,Faroe Islands,Faroe Islands,1814-01-14,49709,Tórshavn,,1398.6013986013986km
 1382,the Federated States of Micronesia,Federated States of Micronesia,11/3/1986,106104,Palikir,Weno,701.8907018907018km
 1387,Federation of Bosnia and Herzegovina,Federation of Bosnia and Herzegovina,3/18/1994,2371603,Sarajevo,,26120.176120176122km
 1388,Federation of Bosnia and Herzegovina,Federation of Bosnia and Herzegovina,12/14/1995,2371603,Sarajevo,,26120.176120176122km
@@ -183,7 +183,7 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 1478,Trieste,,1/10/1947,,Trieste,,738.1507381507381km
 1479,Christiania,Freetown Christiania,,,,,0.3367003367003367km
 1498,French Polynesia,French Polynesia,,,Papeete,Faaa,4167.314167314167km
-1506,the French Southern and Antarctic Lands,Territory of the French Southern and Antarctic Lands,,150,"Saint-Pierre, R�union",,439781km
+1506,the French Southern and Antarctic Lands,Territory of the French Southern and Antarctic Lands,,150,"Saint-Pierre, Réunion",,439781km
 1521,Gabon,Gabonese Republic,8/17/1960,1475000,Libreville,,267668.9976689977km
 1522,Gagauzia,Autonomous Territorial Unit of Gagauzia (Gagauz Yeri),12/23/1994,160700,Comrat,,1831.1318311318312km
 1529,Galmudug,Galmudug State of Somalia,8/14/2006,,Dhusamareb,Galkayo,146000km
@@ -204,7 +204,7 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 1690,Greenland,Greenland,,55847,,,2165524.4755244753km
 1691,Grenada,,3/3/1967,109590,"St. George's, Grenada",,343.952343952344km
 1692,Grenada,,2/7/1974,109590,"St. George's, Grenada",,343.952343952344km
-1695,Guam,Territory of Guam,,161785,"Hag�t�a, Guam",,543.9005439005439km
+1695,Guam,Territory of Guam,,161785,"Hagåtña, Guam",,543.9005439005439km
 1699,Guatemala,Republic of Guatemala,1821-09-15,15806675,Guatemala City,Guatemala City,108888.88888888889km
 1700,Guatemala,Republic of Guatemala,1823-07-01,15806675,Guatemala City,Guatemala City,108888.88888888889km
 1702,Guernsey,Jurisdiction of Guernsey,5/9/1945,65849,Saint Peter Port,,77.95907795907796km
@@ -214,3 +214,362 @@ country,name,longName,foundingDate,population,capital,largestCity,area
 1716,Guyana,Co-operative Republic of Guyana,,735554,"Georgetown, Guyana",,214970.21497021496km
 1731,Haiti,Republic of Haiti,1804-01-01,10604000,Port-au-Prince,,27749.28774928775km
 1732,Haiti,Republic of Haiti,1844-02-27,10604000,Port-au-Prince,,27749.28774928775km
+1733,The Hajduk Republic of Mijat Tomić,Hajdučka Republika Mijata Tomića,6/29/2002,,,,3km
+1764,Herm,Herm,,,,,1.9943019943019944km
+1768,Herzegovina-Neretva,Herzegovina-Neretva Canton,6/12/1996,,Mostar,Mostar,4400.4144004144km
+1821,Honduras,Republic of Honduras,1821-09-15,8249574,Tegucigalpa,Tegucigalpa,112090.13209013209km
+1822,Honduras,Republic of Honduras,1823-07-01,8249574,Tegucigalpa,Tegucigalpa,112090.13209013209km
+1826,Hong Kong,Hong Kong Special Administrative Region of the People's Republic of China,1841-01-26,7234800,,,1103.3411033411032km
+1827,Hong Kong,Hong Kong Special Administrative Region of the People's Republic of China,1842-08-29,7234800,,,1103.3411033411032km
+1849,Hungary,Hungary,1000-12-25,9855571,Budapest,List of historical capitals of Hungary,93030.30303030302km
+1850,Hungary,Hungary,10/23/1989,9855571,Budapest,List of historical capitals of Hungary,93030.30303030302km
+1859,Iceland,Iceland,,,Reykjavík,,102820.51282051283km
+1868,,Amsterdam Island,,,,,55km
+1869,,(New Amsterdam),,,,,55km
+1870,,Saint Paul Island,,,,,6km
+1871,Les Saintes,,,,"Fond-du-Curé, les Saintes","Petite-Anse, les Saintes",12.691012691012691km
+1886,India,Republic of India,8/15/1947,1276267000,New Delhi,Mumbai,3287609.427609428km
+1887,India,Republic of India,1/26/1950,1276267000,New Delhi,Mumbai,3287609.427609428km
+1898,Indonesia,Republic of Indonesia,8/17/1945,255461700,Jakarta,,1904579.1245791246km
+1926,Iran,Islamic Republic of Iran,,78192200,Tehran,,1648205.1282051282km
+1927,Iraq,Republic of Iraq,10/3/1932,37056169,Baghdad,,438316.4983164983km
+1928,Iraqi Kurdistan,Kurdistan Region,3/11/1970,8350000,Erbil,,78733.48873348873km
+1938,Afghanistan,,9/27/1996,,Kabul,,652232.5822325823km
+1939,Afghanistan,,9/27/1996,,Kandahar,,652232.5822325823km
+1942,,Islands of Refreshment,1811-02-04,,,,207km
+1944,Isle of Man,Isle of Man,,,"Douglas, Isle of Man",,572.3905723905724km
+1946,Israel,State of Israel,5/14/1948,8462000,Jerusalem,,20769.23076923077km
+1947,Israel,State of Israel,5/11/1949,8462000,Jerusalem,,20769.23076923077km
+1965,Italy,Italian Republic,1861-03-17,60795612,Rome,,301339.03133903135km
+1966,Italy,Italian Republic,6/2/1946,60795612,Rome,,301339.03133903135km
+1967,Ivory Coast,Republic of Côte d'Ivoire,8/7/1960,23919000,Abidjan,Abidjan,322460.50246050244km
+1968,Ivory Coast,Republic of Côte d'Ivoire,8/7/1960,23919000,Yamoussoukro,Abidjan,322460.50246050244km
+1975,Jamaica,Jamaica,8/6/1962,2950210,"Kingston, Jamaica",,10991.970991970991km
+1978,Japan,Japan,0660-02-11,126919659,Tokyo,,377944km
+1979,Japan,Japan,1890-11-29,126919659,Tokyo,,377944km
+1988,Jersey,Bailiwick of Jersey,5/9/1945,99500,Saint Helier,,118.00051800051801km
+2007,Jordan,Hashemite Kingdom of Jordan,6/17/1946,,Amman,,92299.9222999223km
+2011,Jubaland,Jubaland State of Somalia,4/3/2011,953045,Bu'ale,,85470.08547008547km
+2012,Jubaland,Jubaland State of Somalia,8/29/2013,953045,Bu'ale,,85470.08547008547km
+2059,Karakalpakstan,Republic of Karakalpakstan,,1711800,Nukus,,160062.16006216005km
+2075,Kazakhstan,Republic of Kazakhstan,12/16/1991,17563300,Astana,Almaty,2724902.8749028747km
+2076,Kazakhstan,Republic of Kazakhstan,12/25/1991,17563300,Astana,Almaty,2724902.8749028747km
+2081,Kenya,Republic of Kenya,12/12/1963,45010056,Nairobi,Nairobi,580367.7803677804km
+2082,Kenya,Republic of Kenya,12/12/1964,45010056,Nairobi,Nairobi,580367.7803677804km
+2085,Kerguelen Islands,Kerguelen Islands,,45,,,7215km
+2188,Dagbon,Kingdom of Dagbon,,4228116,"Tamale, Ghana","Tamale, Ghana",97702km
+2199,,Kingdom of Elleore,,,,,0.015km
+2336,North Sudan,Kingdom of North Sudan,6/16/2014,0,,,2060km
+2360,Reino de Redonda,Kingdom of Redonda,,,,,2km
+2394,Tavolara,Kingdom of Tavolara,,57,,,5km
+2400,the Netherlands,Kingdom of the Netherlands,1795-01-19,17100715,Amsterdam,,42678.06267806268km
+2401,the Netherlands,Kingdom of the Netherlands,1581-07-26,17100715,Amsterdam,,42678.06267806268km
+2402,the Netherlands,Kingdom of the Netherlands,1648-01-30,17100715,Amsterdam,,42678.06267806268km
+2425,Kiribati,Republic of Kiribati,7/12/1979,103500,Tarawa,,810.6708106708106km
+2446,Kosovo,Republic of Kosovo,1/31/1946,1859203,Pristina,,10909.09090909091km
+2447,Kosovo,Republic of Kosovo,7/2/1990,1859203,Pristina,,10909.09090909091km
+2463,Kuwait,State of Kuwait,,4187161,Kuwait City,,17819.217819217818km
+2472,Kyrgyzstan,Kyrgyz Republic,10/14/1924,6000000,Bishkek,Capital city,199898.9898989899km
+2473,Kyrgyzstan,Kyrgyz Republic,12/5/1936,6000000,Bishkek,Capital city,199898.9898989899km
+2476,Ladonia,Royal Republic of Ladonia,6/2/1996,,,,1km
+2498,Laos,Lao People's Democratic Republic,12/2/1975,6803699,Vientiane,,236801.3468013468km
+2521,Latvia,Republic of Latvia,11/18/1918,1973700,Riga,,64589.48458948459km
+2522,Latvia,Republic of Latvia,1/26/1921,1973700,Riga,,64589.48458948459km
+2539,Lebanon,Lebanese Republic,9/1/1920,5851000,Beirut,Beirut,10453.250453250454km
+2540,Lebanon,Lebanese Republic,5/23/1926,5851000,Beirut,Beirut,10453.250453250454km
+2543,Lesotho,Kingdom of Lesotho,10/4/1966,2067000,Maseru,Maseru,30354.830354830356km
+2552,Liberia,Republic of Liberia,1822-01-07,4503000,Monrovia,Monrovia,111370.11137011136km
+2553,Liberia,Republic of Liberia,1847-07-26,4503000,Monrovia,Monrovia,111370.11137011136km
+2554,Liberland,Free Republic of Liberland,4/13/2015,0,,,7km
+2555,Libya,Libya,2/10/1947,6411776,Tripoli,,1759541.5695415696km
+2556,Libya,ليبيا,2/10/1947,6411776,Tripoli,,1759541.5695415696km
+2557,Libya,ⵍⵉⴱⵢⴰ,2/10/1947,6411776,Tripoli,,1759541.5695415696km
+2558,Libya,Libya,12/24/1951,6411776,Tripoli,,1759541.5695415696km
+2559,Libya,ليبيا,12/24/1951,6411776,Tripoli,,1759541.5695415696km
+2560,Libya,ⵍⵉⴱⵢⴰ,12/24/1951,6411776,Tripoli,,1759541.5695415696km
+2562,Liechtenstein,Principality of Liechtenstein,1806-07-12,37340,Vaduz,Schaan,157.990157990158km
+2572,Lithuania,Republic of Lithuania,1009-03-09,2884840,Vilnius,,65299.1452991453km
+2573,Lithuania,Republic of Lithuania,1253-07-06,2884840,Vilnius,,65299.1452991453km
+2610,Luxembourg,Grand Duchy of Luxembourg,,562958,Luxembourg City,Capital city,2584.8225848225848km
+2615,Macau,Macao Special Administrative Region,1887-12-01,643100,,,30.044030044030045km
+2616,Macau,of the People's Republic of China,1887-12-01,643100,,,30.044030044030045km
+2619,,,,4760000,,,67000km
+2620,Madagascar,Republic of Madagascar,6/26/1960,22434363,Antananarivo,Antananarivo,586886.8168868169km
+2621,Madagascar,Republic of Madagascar,11/17/2010,22434363,Antananarivo,Antananarivo,586886.8168868169km
+2638,Malawi,Republic of Malawi,7/6/1964,16407000,Lilongwe,Lilongwe,118484.84848484848km
+2639,Malawi,Republic of Malawi,7/6/1966,16407000,Lilongwe,Lilongwe,118484.84848484848km
+2642,,Malaysia,8/31/1957,28334,Kuala Lumpur,,330795.1307951308km
+2643,,Malaysia,8/31/1957,28334,Putrajaya,,330795.1307951308km
+2644,,Malaysia,9/16/1963,28334,Kuala Lumpur,,330795.1307951308km
+2645,,Malaysia,9/16/1963,28334,Putrajaya,,330795.1307951308km
+2646,Maldives,Republic of Maldives,7/26/1965,393500,Malé,Malé,297.85029785029786km
+2647,Maldives,Republic of Maldives,8/7/2008,393500,Malé,Malé,297.85029785029786km
+2648,Mali,Republic of Mali,6/20/1960,,Bamako,Bamako,1240194.2501942501km
+2649,Mali,Republic of Mali,9/22/1960,,Bamako,Bamako,1240194.2501942501km
+2656,Malta,Republic of Malta,9/21/1964,445426,Valletta,Birkirkara,315.980315980316km
+2657,Malta,Republic of Malta,12/13/1974,445426,Valletta,Birkirkara,315.980315980316km
+2703,Marshall Islands,Republic of the Marshall Islands,10/21/1986,72191,Majuro,Capital city,181.3001813001813km
+2712,Mauritania,Islamic Republic of Mauritania,11/28/1960,4067564,Nouakchott,,1030000km
+2713,Mauritania,Islamic Republic of Mauritania,7/12/1991,4067564,Nouakchott,,1030000km
+2714,Mauritius,Republic of Mauritius,3/12/1968,1261208,Port Louis,,2038.3320383320383km
+2715,Mauritius,Republic of Mauritius,3/12/1992,1261208,Port Louis,,2038.3320383320383km
+2734,,,3/26/1991,288996820,,,19326961km
+2735,,,12/16/1994,288996820,,,19326961km
+2739,Mexico,United Mexican States,1810-09-16,119530753,Mexico City,Mexico City,1972561.5125615126km
+2740,Mexico,United Mexican States,1821-09-27,119530753,Mexico City,Mexico City,1972561.5125615126km
+2770,Mohegan,Mohegan Tribe of Native Americans of Connecticut,1638-09-21,1920,"Uncasville, Connecticut",,2.046102046102046km
+2771,Mohegan,Mohegan Tribe of Native Americans of Connecticut,3/7/1994,1920,"Uncasville, Connecticut",,2.046102046102046km
+2772,Mohéli,Autonomous Island of Mohéli,,38000,Fomboni,,211km
+2779,Moldova,Republic of Moldova,6/23/1990,2913281,Chișinău,,33843.56384356385km
+2780,Moldova,Republic of Moldova,8/27/1991,2913281,Chișinău,,33843.56384356385km
+2781,Monaco,Principality of Monaco,1814-05-17,37800,Monaco City,,2.0202020202020203km
+2789,Mongolia,Mongolia,,3042511,Ulaanbaatar,,1564125.8741258741km
+2792,Montenegro,Montenegro,1852-01-01,,Podgorica,,13809.89380989381km
+2793,Montserrat,Montserrat,,4900,"Plymouth, Montserrat",Brades,101.01010101010101km
+2794,Montserrat,Montserrat,,4900,Little Bay (Montserrat),Brades,101.01010101010101km
+2795,Montserrat,Montserrat,,4900,Brades,Brades,101.01010101010101km
+2797,Morocco,Kingdom of Morocco,,,Rabat,Casablanca,710852.1108521109km
+2801,Mount Athos,,,,"Karyes, Mount Athos",,335.6384356384356km
+2803,Mozambique,Republic of Mozambique,6/25/1975,24692144,Maputo,,801595.4415954415km
+2804,Mozambique,Republic of Mozambique,11/30/1990,24692144,Maputo,,801595.4415954415km
+2814,,Murrawarri Republic,3/30/2013,,"Barringun, Queensland",,81000km
+2820,Myanmar,Republic of the Union of Myanmar,1510-10-16,,Naypyidaw,Yangon,676578.6065786065km
+2821,Myanmar,Republic of the Union of Myanmar,0849-12-23,,Naypyidaw,Yangon,676578.6065786065km
+2827,Nagorno-Karabakh,Nagorno-Karabakh,,146573,,,4403.004403004403km
+2828,Nagorno-Karabakh,",",,146573,,,4403.004403004403km
+2829,Nagorno-Karabakh,Nagorno-Karabakh Republic,9/2/1991,146600,Stepanakert,Stepanakert,11458.171458171459km
+2830,Nakhchivan,Nakhchivan Autonomous Republic,2/9/1924,414900,Nakhchivan (city),,5363.8953638953635km
+2831,Nakhchivan,Nakhchivan Autonomous Republic,11/17/1990,414900,Nakhchivan (city),,5363.8953638953635km
+2835,Namibia,,2/9/1990,,Windhoek,,825423.4654234655km
+2836,Namibia,,3/21/1990,,Windhoek,,825423.4654234655km
+2851,Nauru,Republic of Nauru,1/31/1968,,Yaren District,,20.979020979020977km
+2866,Nepal,Federal Democratic Republic of Nepal,1768-09-25,,Kathmandu,,147182.0771820772km
+2867,Nepal,Federal Democratic Republic of Nepal,1/15/2007,,Kathmandu,,147182.0771820772km
+2869,the Netherlands,Netherlands,1581-07-26,16971452,Amsterdam,,41525.51152551152km
+2870,the Netherlands,Netherlands,1648-01-30,16971452,Amsterdam,,41525.51152551152km
+2879,Nevis,State of Nevis,9/19/1983,,"Charlestown, Saint Kitts and Nevis",,92.98109298109297km
+2880,New Caledonia,New Caledonia,,,Nouméa,,18576km
+2899,New Zealand,New Zealand,1856-05-07,4596700,Wellington,Auckland,268021.238021238km
+2900,New Zealand,New Zealand,9/26/1907,4596700,Wellington,Auckland,268021.238021238km
+2905,Nicaragua,Republic of Nicaragua,1850-07-25,,Managua,,130000.0km
+2906,Nicaragua,Republic of Nicaragua,1821-09-15,,Managua,,130000.0km
+2911,Niger,Republic of Niger,8/3/1960,,Niamey,Niamey,1268267.2882672884km
+2913,Nigeria,Federal Republic of Nigeria,10/1/1960,182202000,Abuja,Lagos,923768.4537684538km
+2916,,,,500000,,Bakhdida,4197km
+2917,Niue,Niue,10/19/1974,1190,"Alofi, Niue",,260km
+2924,,Nordic countries,,26613758,,,3425804km
+2925,Norfolk Island,Territory of Norfolk Island,,2210,"Kingston, Norfolk Island",Burnt Pine,34.44703444703445km
+2932,North Korea,Democratic People's Republic of Korea,8/15/1945,24895000,Pyongyang,Pyongyang,120507.6405076405km
+2935,North-Eastern Rhodesia,,1/29/1900,,Chipata,,282310.2823102823km
+2937,Northern Cyprus,Turkish Republic of Northern Cyprus,11/15/1983,313626,North Nicosia,,3354.0533540533543km
+2943,Northern Mariana Islands,Commonwealth of the Northern Mariana Islands,,52344,"Capitol Hill, Saipan",,463.6104636104636km
+2961,Norway,Kingdom of Norway,4/9/1940,5214900,Oslo,,385180.00518000516km
+2994,Oghuz State,,,,Jankent,,1500000km
+3001,Oman,Sultanate of Oman,,4298320,"Muscat, Oman","Muscat, Oman",309500.1295001295km
+3011,,,3/20/1970,1000000000,,,28231028.231028233km
+3012,,,11/16/1997,1000000000,,,28231028.231028233km
+3015,,,8/1/1975,1229503230,,,50119801km
+3027,,,,,,,119394km
+3030,,,,40000000,,,13962626.262626262km
+3035,Pakistan,Islamic Republic of Pakistan,12/29/1930,199085847,Islamabad,Karachi,881919.191919192km
+3036,Pakistan,Islamic Republic of Pakistan,1/28/1933,199085847,Islamabad,Karachi,881919.191919192km
+3045,Palau,Republic of Palau,7/18/1947,17948,Ngerulmud,Koror,465.55296555296553km
+3046,Palau,Republic of Palau,4/2/1979,17948,Ngerulmud,Koror,465.55296555296553km
+3049,Palestinian territories,Palestinian territories,,,,,6221.186221186221km
+3059,,Republic of Panama,1821-11-28,3929141,Panama City,Panama City,74177.3km
+3060,,Republic of Panama,11/3/1903,3929141,Panama City,Panama City,74177.3km
+3070,Papua New Guinea,Independent State of Papua New Guinea,7/1/1949,7059653,Port Moresby,Port Moresby,462841.23284123285km
+3071,Papua New Guinea,Independent State of Papua New Guinea,9/16/1975,7059653,Port Moresby,Port Moresby,462841.23284123285km
+3072,Paraguay,Republic of Paraguay,1811-05-14,7012433,Asunción,Asunción,406752km
+3073,Paraguay,Republic of Paraguay,1811-05-15,7012433,Asunción,Asunción,406752km
+3074,Paraguay,Republic of Paraguay,,6802000,Asunción,Asunción,406752km
+3112,Peru,Republic of Peru,1821-07-28,31151643,Lima,Lima,1285224.0352240351km
+3113,Peru,Republic of Peru,1824-12-09,31151643,Lima,Lima,1285224.0352240351km
+3116,Peter I Island,Peter I Island,2/2/1929,,,,154km
+3117,Peter I Island,Peter I Island,3/6/1931,,,,154km
+3138,Pitcairn Islands,Pitcairn,,56,"Adamstown, Pitcairn Islands",,46.87904687904688km
+3140,Poland,Republic of Poland,0966-04-14,38483957,Warsaw,,312602.9526029526km
+3141,Poland,Republic of Poland,1025-04-18,38483957,Warsaw,,312602.9526029526km
+3142,Poland,Republic of Poland,4/8/1945,38483957,Warsaw,,312602.9526029526km
+3157,Portugal,Portuguese Republic,4/25/1974,10427301,Lisbon,,92211.86221186222km
+3175,Canton 10,Posavina Canton,6/12/1996,,Orašje,Odžak,325.04532504532506km
+3238,PHR,Principality of Hutt River,4/21/1970,,Nein,,75km
+3265,Orange,,,,"Orange, Vaucluse",,279.72027972027973km
+3267,Old Baldy,Grand Principality of Outer Baldonia,,,,,0.016km
+3285,Sealand,Principality of Sealand,9/2/1967,,,,0.025km
+3286,Seborga,Principality of Seborga,,,Seborga,,14km
+3308,,Principality of Wy,11/15/2004,,,,0.0007km
+3316,,Province of Bumbunga,3/29/1976,,,,0.04km
+3378,Puerto Rico,Commonwealth of Puerto Rico,1898-12-10,3474182,"San Juan, Puerto Rico",,9103.859103859104km
+3379,Puerto Rico,Commonwealth of Puerto Rico,3/2/1917,3474182,"San Juan, Puerto Rico",,9103.859103859104km
+3380,Puntland,Puntland Goverment,8/1/1998,4284633,Garoowe,Bosaso,212509.71250971252km
+3387,Qatar,State of Qatar,1878-12-18,2423175,Doha,Doha,11571.095571095571km
+3388,Qatar,State of Qatar,9/1/1971,2423175,Doha,Doha,11571.095571095571km
+3398,Queen Maud Land,Queen Maud Land,1/19/1939,,,,2700000km
+3399,Queen Maud Land,Queen Maud Land,1/14/1939,,,,2700000km
+3477,,Ireland,4/24/1916,4635400,Dublin,,70274.54027454027km
+3478,,Ireland,1/21/1919,4635400,Dublin,,70274.54027454027km
+3481,Lakotah,Republic of Lakotah,12/19/2007,100000,Republic of Lakotah,"Omaha, Nebraska",200000.0km
+3485,Republic of Macedonia,Republic of Macedonia,8/13/1903,2069162,Skopje,,25327.63532763533km
+3486,Republic of Macedonia,Republic of Macedonia,3/8/1946,2069162,Skopje,,25327.63532763533km
+3492,Molossia,Republic of Molossia,9/3/1999,,,,0.00518000518000518km
+3503,,Republic of Rose Island,6/24/1968,,,,0.0004km
+3506,,Republic of Saugeais,,4337,Montbenoît,,40km
+3522,the Republic of the Congo,Republic of the Congo,8/15/1960,4662446,Brazzaville,Brazzaville,342002.072002072km
+3532,,Republic of Vevčani,9/19/1991,3656,,,22.8km
+3538,Republika Srpska,Republika Srpska,1/9/1992,,Sarajevo,Istočno Sarajevo,24856.254856254855km
+3539,Republika Srpska,Republika Srpska,1/9/1992,,Banja Luka,Istočno Sarajevo,24856.254856254855km
+3540,Republika Srpska,Republika Srpska,12/14/1995,,Sarajevo,Istočno Sarajevo,24856.254856254855km
+3541,Republika Srpska,Republika Srpska,12/14/1995,,Banja Luka,Istočno Sarajevo,24856.254856254855km
+3588,Romania,Romania,1859-01-24,19511000,Bucharest,,238391.6083916084km
+3592,Ross Dependency,Ross Dependency,,10,New Zealand,,450660.4506604507km
+3593,Ross Dependency,Ross Dependency,,10,United States,,450660.4506604507km
+3594,Ross Dependency,Ross Dependency,,10,McMurdo Station,,450660.4506604507km
+3595,Ross Dependency,Ross Dependency,,10,Scott Base,,450660.4506604507km
+3600,Rotuma,Rotuma Island,10/10/1970,,,,46km
+3611,Russia,Russian Federation,12/12/1993,144192450,Moscow,,17075369.075369075km
+3621,Rwanda,Republic of Rwanda,7/1/1962,11262564,Kigali,Kigali,26337.736337736336km
+3627,,,,11330944,,,65400.1554001554km
+3635,Sahrawi Arab Democratic Republic,Sahrawi Arab Democratic Republic,11/14/1975,100000,Laayoune,Laayoune,266001.036001036km
+3636,Sahrawi Arab Democratic Republic,Sahrawi Arab Democratic Republic,11/14/1975,100000,Tifariti,Laayoune,266001.036001036km
+3637,Sahrawi Arab Democratic Republic,Sahrawi Arab Democratic Republic,2/27/1976,100000,Laayoune,Laayoune,266001.036001036km
+3638,Sahrawi Arab Democratic Republic,Sahrawi Arab Democratic Republic,2/27/1976,100000,Tifariti,Laayoune,266001.036001036km
+3639,Saint-Barthélemy,Collectivity of Saint-Barthélemy,1784-07-01,9035,"Gustavia, Saint Barthélemy","Gustavia, Saint Barthélemy",24.605024605024607km
+3645,Saint Helena,Saint Helena,,,"Jamestown, Saint Helena",,121.73012173012172km
+3646,"Saint Helena, Ascension and Tristan da Cunha","Saint Helena, Ascension and Tristan da Cunha",1834-04-22,,"Jamestown, Saint Helena",,393.6803936803937km
+3647,Saint Kitts and Nevis,Federation of Saint Kitts and Nevis,2/27/1967,54961,Basseterre,,269.36026936026934km
+3648,Saint Kitts and Nevis,Federation of Saint Kitts and Nevis,9/19/1983,54961,Basseterre,,269.36026936026934km
+3649,Saint Lucia,Saint Lucia,3/1/1967,,Castries,,617.016317016317km
+3650,Saint Lucia,Saint Lucia,2/22/1979,,Castries,,617.016317016317km
+3651,Saint Pierre and Miquelon,,1814-05-30,,"Saint-Pierre, Saint Pierre and Miquelon","Saint-Pierre, Saint Pierre and Miquelon",242km
+3652,Saint Pierre and Miquelon,,10/27/1946,,"Saint-Pierre, Saint Pierre and Miquelon","Saint-Pierre, Saint Pierre and Miquelon",242km
+3653,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,10/27/1969,103000,Kingstown,,388.5003885003885km
+3654,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,10/27/1979,103000,Kingstown,,388.5003885003885km
+3675,Samoa,Independent State of Samoa,1889-06-14,194320,Apia,Apia,2841.232841232841km
+3676,Samoa,Independent State of Samoa,2/16/1900,194320,Apia,Apia,2841.232841232841km
+3679,San Marino,Republic of San Marino,0301-09-03,32576,City of San Marino,,61.2km
+3680,San Marino,Republic of San Marino,1600-10-08,32576,City of San Marino,,61.2km
+3688,São Tomé and Príncipe,Democratic Republic of,7/12/1975,190428,São Tomé,,963.4809634809635km
+3689,São Tomé and Príncipe,São Tomé and Príncipe,7/12/1975,190428,São Tomé,,963.4809634809635km
+3694,Sark,Sark,,600,,,5.18000518000518km
+3706,Saudi Arabia,Kingdom of Saudi Arabia,9/23/1932,30770375,Riyadh,Riyadh,2149702.14970215km
+3708,Savoie,,1416-02-19,1125119,Chambéry,Chambéry,10416km
+3809,Senegal,Republic of Senegal,4/4/1960,13567338,Dakar,,196840.19684019685km
+3810,Senegal,Republic of Senegal,8/20/1960,13567338,Dakar,,196840.19684019685km
+3819,Serbia,Republic of Serbia,,7041599,Belgrade,,88361km
+3827,Seychelles,Republic of Seychelles,6/29/1976,92000,"Victoria, Seychelles",,458.43045843045843km
+3853,Sierra Leone,Republic of Sierra Leone,4/27/1961,6190280,Freetown,,71740.48174048174km
+3854,Sierra Leone,Republic of Sierra Leone,4/19/1971,6190280,Freetown,,71740.48174048174km
+3858,Singapore,Republic of Singapore,8/9/1965,5535000,City-state,,719.1km
+3860,SEPA,Single Euro Payments Area,,,,,4854408.184408184km
+3862,Sint Maarten,Sint Maarten,10/10/2010,,"Philipsburg, Sint Maarten",Lower Prince's Quarter,33.92903392903393km
+3867,Slovakia,Slovak Republic,10/28/1918,5415949,Bratislava,,49033.92903392903km
+3868,Slovakia,Slovak Republic,1/1/1993,5415949,Bratislava,,49033.92903392903km
+3869,Slovenia,Republic of Slovenia,10/29/1918,2063077,Ljubljana,,20271.95027195027km
+3870,Slovenia,Republic of Slovenia,12/4/1918,2063077,Ljubljana,,20271.95027195027km
+3891,Solomon Islands,Solomon Islands,7/7/1978,523000,Honiara,,28399.378399378398km
+3895,Somalia,Federal Republic of Somalia,,10816143,Mogadishu,Mogadishu,637658.6376586377km
+3896,Somaliland,Republic of Somaliland,5/18/1991,4500000,Hargeisa,Hargeisa,137529.13752913752km
+3903,South Africa,,5/31/1910,54956900,Cape Town,Johannesburg,1221038.591038591km
+3904,South Africa,,5/31/1910,54956900,Bloemfontein,Johannesburg,1221038.591038591km
+3905,South Africa,,5/31/1910,54956900,Pretoria,Johannesburg,1221038.591038591km
+3906,South Africa,,12/11/1931,54956900,Cape Town,Johannesburg,1221038.591038591km
+3907,South Africa,,12/11/1931,54956900,Bloemfontein,Johannesburg,1221038.591038591km
+3908,South Africa,,12/11/1931,54956900,Pretoria,Johannesburg,1221038.591038591km
+3910,,,,1713870000,,,5099611km
+3911,South Georgia and the South Sandwich Islands,South Georgia and the South Sandwich Islands,,30,King Edward Point,,3903.133903133903km
+3913,South Korea,,-2346,51529338,Seoul,,100209.79020979021km
+3914,South Ossetia,Republic of South Ossetia,12/21/1991,51547,Tskhinvali,,3900.5439005439007km
+3915,South Ossetia,Republic of South Ossetia,8/26/2008,51547,Tskhinvali,,3900.5439005439007km
+3918,South Sudan,Republic of South Sudan,12/31/1955,12340000,Juba,,619748.7697487697km
+3919,South Sudan,Republic of South Sudan,1/6/2005,12340000,Juba,,619748.7697487697km
+3922,,Southern African Development Community (SADC),8/17/1992,277000000,,,9882959km
+3923,,Southern African Development Community (SADC),4/1/1980,277000000,,,9882959km
+3940,Aeterna Lucina,Sovereign State of Aeterna Lucina,,,,,14km
+3945,Spain,Kingdom of Spain,1479-01-20,46439864,Madrid,,505993.265993266km
+3960,,Special administrative regions of the People's Republic of China,,7858800,,,1135.7km
+3964,Sri Lanka,,2/4/1948,,Sri Jayawardenepura Kotte,Colombo,65609.94560994561km
+3965,Sri Lanka,,2/4/1948,,Colombo,Colombo,65609.94560994561km
+3998,Palestine,State of Palestine,11/15/1988,4550368,Ramallah,Gaza City,6216.006216006216km
+3999,Palestine,State of Palestine,11/15/1988,4550368,Jerusalem,Gaza City,6216.006216006216km
+4000,Palestine,State of Palestine,11/15/1988,4550368,East Jerusalem,Gaza City,6216.006216006216km
+4001,Palestine,State of Palestine,11/29/2012,4550368,Ramallah,Gaza City,6216.006216006216km
+4002,Palestine,State of Palestine,11/29/2012,4550368,Jerusalem,Gaza City,6216.006216006216km
+4003,Palestine,State of Palestine,11/29/2012,4550368,East Jerusalem,Gaza City,6216.006216006216km
+4020,Subanen,Subanen Territory,,,Zamboanga City,Zamboanga City,23409km
+4021,Sudan,Republic of the Sudan,,40235000,Khartoum,Omdurman,1886078.7360787361km
+4065,Suriname,Republic of Suriname,12/15/1954,573311,Paramaribo,Paramaribo,163820.25382025383km
+4066,Suriname,Republic of Suriname,11/25/1975,573311,Paramaribo,Paramaribo,163820.25382025383km
+4070,Svalbard,Svalbard,,2642,Longyearbyen,,61023.051023051026km
+4072,Swaziland,Kingdom of Swaziland,9/6/1968,1119000,Mbabane,Mbabane,17363.377363377364km
+4073,Swaziland,Kingdom of Swaziland,9/6/1968,1119000,Lobamba,Mbabane,17363.377363377364km
+4074,Sweden,Kingdom of Sweden,,9851017,Stockholm,,455571.0955710956km
+4084,Switzerland,Swiss Confederation,1291-08-01,8211700,Bern,Zürich,41284.641284641286km
+4085,Switzerland,Swiss Confederation,1499-09-22,8211700,Bern,Zürich,41284.641284641286km
+4089,Syria,Syrian Arab Republic,3/8/1920,17064854,Damascus,Aleppo,185130.79513079513km
+4090,Syria,Syrian Arab Republic,12/1/1924,17064854,Damascus,Aleppo,185130.79513079513km
+4163,Taiwan,Republic of China,10/10/1911,23476640,Taipei,New Taipei City,36192.696192696196km
+4164,Taiwan,Republic of China,1/1/1912,23476640,Taipei,New Taipei City,36192.696192696196km
+4167,Tajikistan,Republic of Tajikistan,9/9/1991,8610000,Dushanbe,,143100.2331002331km
+4168,Tajikistan,Republic of Tajikistan,12/25/1991,8610000,Dushanbe,,143100.2331002331km
+4171,Talossa,Kingdom of Talossa,12/26/1979,255,,,13km
+4184,Tanzania,United Republic of Tanzania,12/9/1961,51820000,Dodoma,Dar es Salaam,947308.9873089873km
+4185,Tanzania,United Republic of Tanzania,12/10/1963,51820000,Dodoma,Dar es Salaam,947308.9873089873km
+4205,Commonwealth (Insular area),,,4065516,,,22294.2km
+4206,Unincorporated territories of the United States,,,4065516,,,22294.2km
+4207,Insular area,,,4065516,,,22294.2km
+4214,Thailand,Kingdom of Thailand,,67959000,Bangkok,Bangkok,513118.36311836314km
+4218,The Bahamas,Commonwealth of the Bahamas,7/10/1973,321834,"Nassau, Bahamas",,13877.233877233877km
+4219,,Republic of the Gambia,2/18/1965,,Banjul,Serekunda,10378.140378140379km
+4256,Tobago,Tobago,,,"Scarborough, Tobago","Scarborough, Tobago",300.44030044030046km
+4257,Togo,Togolese Republic,4/27/1960,7552318,Lomé,Lomé,56785.80678580679km
+4261,Tokelau,,,,List of DNS record types,Fakaofo,9.997409997409997km
+4265,Tonga,Kingdom of Tonga,6/4/1970,,Nukuʻalofa,,748.5107485107485km
+4279,Transnistria,Pridnestrovian Moldavian Republic,7/21/1992,505153,Tiraspol,,4162.134162134163km
+4280,Transnistria,Pridnestrovian Moldavian Republic,9/2/1990,505153,Tiraspol,,4162.134162134163km
+4293,Tristan da Cunha,,1816-08-14,,Edinburgh of the Seven Seas,,207.2002072002072km
+4312,Tunisia,Tunisian Republic,1705-07-15,10982754,Tunis,,163610.4636104636km
+4313,Tunisia,al-Jumhūrīyah at-Tūnisīyah,1705-07-15,10982754,Tunis,,163610.4636104636km
+4314,Tunisia,Tunisian Republic,3/20/1956,10982754,Tunis,,163610.4636104636km
+4315,Tunisia,al-Jumhūrīyah at-Tūnisīyah,3/20/1956,10982754,Tunis,,163610.4636104636km
+4318,Turkey,Republic of Turkey,7/24/1923,,Ankara,Istanbul,783566.4335664336km
+4319,Turkey,Republic of Turkey,4/23/1920,,Ankara,Istanbul,783566.4335664336km
+4327,Turkmenistan,Turkmenistan,4/30/1918,5171943,Ashgabat,Ashgabat,488101.5281015281km
+4328,Turks and Caicos Islands,Turks and Caicos Islands,,,Cockburn Town,Providenciales,616.3km
+4330,Tuvalu,Tuvalu,10/1/1978,10837,Funafuti,,25.9000259000259km
+4334,Twente,,,626586,Enschede,,1503km
+4347,Ukraine,Ukraine,6/30/1941,44429471,Kiev,,606.8376068376068km
+4359,Una-Sana,Una-Sana Canton,6/12/1996,,Bihać,Bihać,4125.097125097125km
+4367,United Arab Emirates,United Arab Emirates,,5779760,Abu Dhabi,Dubai,83600.1036001036km
+4372,United Kingdom,,1801-01-01,64716000,London,,242496.7624967625km
+4373,United Kingdom,,1707-05-01,64716000,London,,242496.7624967625km
+4392,the United States,United States of America,1776-07-04,322369319,"Washington, D.C.",New York City,9857360.787360787km
+4393,the United States,United States of America,1781-03-01,322369319,"Washington, D.C.",New York City,9857360.787360787km
+4398,United States Minor Outlying Islands,United States Minor Outlying Islands,,300,,,34.18803418803419km
+4403,United States Virgin Islands,Virgin Islands of the United States,3/31/1917,103574,"Charlotte Amalie, U.S. Virgin Islands",,346.36104636104636km
+4404,United States Virgin Islands,Virgin Islands of the United States,7/22/1954,103574,"Charlotte Amalie, U.S. Virgin Islands",,346.36104636104636km
+4410,Mustang,Kingdom of Lo / Mustang,,7000,Lo Manthang,,1813.001813001813km
+4411,Mustang,སྨོནཋང,,7000,Lo Manthang,,1813.001813001813km
+4417,Uruguay,Eastern Republic of Uruguay,1825-08-25,3324460,Montevideo,,176216.0062160062km
+4418,Uruguay,Eastern Republic of Uruguay,1828-08-28,3324460,Montevideo,,176216.0062160062km
+4425,Uzbekistan,Republic of Uzbekistan,9/2/1920,31025500,Tashkent,Tashkent,447402.2274022274km
+4432,Vanuatu,Republic of Vanuatu,7/30/1980,272264,Port Vila,Port Vila,12190km
+4435,Vatican City,Vatican City State,2/11/1929,842,,,0.44030044030044035km
+4438,Venezuela,Bolivarian Republic of Venezuela,1830-01-13,,Caracas,,916449.1064491065km
+4439,Venezuela,Bolivarian Republic of Venezuela,1811-07-05,,Caracas,,916449.1064491065km
+4459,Vietnam,Socialist Republic of Vietnam,9/2/1945,91700000,Hanoi,Ho Chi Minh City,332983.68298368296km
+4460,Vietnam,Socialist Republic of Vietnam,4/30/1975,91700000,Hanoi,Ho Chi Minh City,332983.68298368296km
+4478,Vojvodina,Autonomous Province of Vojvodina,,,Novi Sad,,21507.381507381506km
+4509,Wallis,Kingdom ofUvea,7/29/1961,10731,Mata-Utu,Capital city,77.51877751877751km
+4510,Wallis and Futuna,Territory of the Wallis and Futuna Islands,,15500,Mata-Utu,Mata-Utu,142.45014245014244km
+4534,West Herzegovina Canton,West Herzegovina Canton,6/12/1996,,Široki Brijeg,Široki Brijeg,1361.8233618233617km
+4607,Yemen,Republic of Yemen,11/1/1918,25408000,Sana'a,Sana'a,527832.1678321678km
+4608,Yemen,Republic of Yemen,11/1/1918,25408000,Aden,Sana'a,527832.1678321678km
+4609,Yemen,Republic of Yemen,11/30/1967,25408000,Sana'a,Sana'a,527832.1678321678km
+4610,Yemen,Republic of Yemen,11/30/1967,25408000,Aden,Sana'a,527832.1678321678km
+4623,Zambia,Republic of Zambia,1890-06-27,16212000,Lusaka,,752621.0826210827km
+4624,Zambia,Republic of Zambia,1899-11-28,16212000,Lusaka,,752621.0826210827km
+4628,,Zanzibar,12/10/1963,,Zanzibar City,,2461km
+4629,,Zanzibar,1/12/1964,,Zanzibar City,,2461km
+4649,Zimbabwe,Republic of Zimbabwe,11/11/1965,12973808,Harare,Harare,390756.28075628076km
+4650,Zimbabwe,Republic of Zimbabwe,4/18/1980,12973808,Harare,Harare,390756.28075628076km
