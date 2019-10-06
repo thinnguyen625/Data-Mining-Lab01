@@ -37,8 +37,23 @@ def process_file_text():
             writeFile.close()
     fi.close()
 
+def readAllInFile(fileInput):
+    with open(fileInput,"r",encoding="utf8") as readFile:
+        csv_reader = csv.reader(readFile)
+        result = []
+        for row in csv_reader:
+            result.append(row)
+    readFile.close()
+    return result
+
+
 def main():
     process_file_text()
+    file_in = "output.csv"
+    file_out = "processed.csv"
+    input_filedname = "passenger_numbers"
+    data = readAllInFile(file_in)
+    
 
 if __name__ == '__main__':
     main()
