@@ -1,72 +1,14 @@
 import sys
-import getopt
+import argparse
 import csv
 import re
-
-
-def main(argv):
-    inputfile = ''
-    outputfile = ''
-    task=''
-    bin=''
-    nameList=''
-    try:
-        opts,args = getopt.getopt(argv, "hi:o:", [
-                             "help", "input=", "output=", "task=", "nameList=", "bin="])
-    except getopt.GetoptError:
-        print('-h,--help (for more information)')
-        sys.exit(2)
-    for opt, arg in opts:
-        if opt in ('-h', "--help"):
-            print(
-                '1712713.py preprocess --input original.csv --output processed.csv --task remove --nameList {id, name}')
-            sys.exit()
-        elif opt in ("-i", "--input"):
-            inputfile = arg
-        elif opt in ("-o", "--output"):
-            outputfile = arg
-        elif opt in ("-t","--task"):
-            task=arg
-        elif opt in ('-n',"--nameList"):
-            nameList=arg
-        elif opt in ('-b',"--bin"):
-            bin=arg
-    if task=='Min-Max':
-        result=readFieldInFile(inputfile,i)
-        for i in nameList:
-            attr=readFieldInFile(inputfile,i)
-            result=attr.convertToOutput()
-            
-
-
-
-        
-
-
-
-
-# def main():
-#     file_name_in = 'original.csv'
-#     file_name_out = "processed.csv"
-#     input_filedname = "passenger_numbers"
-#     data = readAllInFile(file_name_in)
-#     dataOut = normalizationByWidth(data, input_filedname, 5)
-#     writeFieldInFile(file_name_out, dataOut.convertToOutput())
-#     data.clear()
-#     del data
 
 
 class Attribute:
     def __init__(self, name, data):
         self.name = name
         self.data = data
-    def addAttr(self,b):
-        lenMax = max(len(self.data),len(b.data))
-        result=[[self.name,b.name]]
-        for i in range(0,lenMax):
-            result.append([self.data[i],b.data[i]])
-        return result
-        
+
     def convertDataToFloat(self):
         result = []
         lenValid = 0
@@ -240,7 +182,7 @@ def normalizationByDepth(data, fieldName, numDepth=1):
     end = sortFloat[i+numDepth-1]
     while i < len(sortFloat):
         if k == numDepth:
-            k=0
+            k = 0
             if i+numDepth < len(sortFloat):
                 start = sortFloat[i]
                 end = sortFloat[i+numDepth-1]
@@ -249,8 +191,8 @@ def normalizationByDepth(data, fieldName, numDepth=1):
                 end = sortFloat[i+remain-1]
         indexItem = floatField.index(sortFloat[i])
         floatField[indexItem] = '['+str(start)+','+str(end)+']'
-        k+=1
-        i+=1
+        k += 1
+        i += 1
     field.clear()
     del field
     return Attribute(fieldName, floatField)
@@ -333,14 +275,17 @@ def minMaxNorm(data, new_range=[0, 1]):  # hàm chuẩn hóa min max
              new_range: [New_Min,New_Max]  default value is [0,1] if nothing value passed
        Return: An list hold all values that are normalized"""  # day la phan mo ta ham
 
-    min_num = min(data)
-    max_num = max(data)
+    min_num = minValid(data)
+    max_num = maxValid(data)
     result = []  # mang chua kq tính từng dòng dữ liệu
     for i in data:
+        if i != '':
             # cong thuc tinh trong slide
-        vi = ((i-min_num)/(max_num-min_num)) * \
-            (new_range[1]-new_range[0])+new_range[1]
-        result.append(vi)
+            vi = ((i-min_num)/(max_num-min_num)) * \
+                (new_range[1]-new_range[0])+new_range[1]
+            result.append(vi)
+        else:
+            result.append(i)
     return result
 
 
@@ -353,10 +298,12 @@ def zScoreNorm(data):  # hàm chuẩn hóa Z-scores
     d_mean = mean(data)
     d_stddev = stddev(data)  # độ lệch chuẩn
     for i in data:
-        vi = (i-d_mean)/d_stddev
-        result.append(vi)
+        if i!='':
+         vi = (i-d_mean)/d_stddev
+         result.append(vi)
+        else:
+            result.append(i)
     return result
-
 
 def mean(data):  # hàm tính trung bình
     "Return the sample arithmetic mean of data"
@@ -379,10 +326,12 @@ def variance(data):  # hàm tính phương sai
     "Return variance of sequence data"
     d_mean = mean(data)
     d_sum = 0
-    n = len(data)
+    lenValid=0
     for i in data:
-        d_sum = d_sum + (i-d_mean)**2
-    return d_sum/float(n-1)
+        if i!='':
+          lenValid+=1
+          d_sum = d_sum + (i-d_mean)**2
+    return d_sum/float(lenValid)
 
 
 def stddev(data):
@@ -390,5 +339,120 @@ def stddev(data):
     return (variance(data))**0.5
 
 
-if __name__ == "__main__":
-    main(sys.argv[1:])
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', '--input', help="input a name of a file csv to read")
+parser.add_argument(
+    '-o', '--output', help="input a name of a file csv to write")
+parser.add_argument('-n', '--nameList',
+                    help="input a task what do you want to do with the file", type=str)
+parser.add_argument(
+    '-t', '--task', help="input a task what do you want to do with the file \n  list of task [min-max,z-core,normWidth,normDepth,remove,insert]")
+parser.add_argument(
+    '-m', '--min', help="input min of a range to min-max normalization if --task min-max", type=int)
+parser.add_argument(
+    '-M', '--max', help="input Max of a range to min-max normalization if --task min-max", type=int)
+parser.add_argument(
+    '-w', '--width', help="input depth to normalization if --task normWidth", type=int)
+parser.add_argument(
+    '-d', '--depth', help="input depth to normalization if --task normDepth", type=int)
+args = parser.parse_args()
+
+if args.nameList:
+    nameList = args.nameList.strip()
+    for i in nameList:
+        if i in '{}[]':
+            nameList = nameList.replace(i, '')
+    nameList = nameList.split(',')
+if args.input and args.output:
+    if args.task == 'min-max':        
+        attr = readFieldInFile(args.input, nameList[0])
+        data = attr.convertDataToFloat()
+        minmax_attr = minMaxNorm(
+            attr.convertDataToFloat(), [args.min, args.max])
+        result = [[nameList[0]]]
+        for i in minmax_attr:
+            result.append([i])
+        lenNameList = len(nameList)
+        i = 1
+        while(i < lenNameList):
+            attr = readFieldInFile(args.input, nameList[i])
+            minmax_attr = minMaxNorm(
+                attr.convertDataToFloat(), [args.min, args.max])
+            result[0].append(nameList[i])
+            j = 1
+            for k in minmax_attr:
+                result[j].append(k)
+                j += 1
+            i += 1
+        writeFieldInFile(args.output,modifyDataToOutput(result))
+        attr.clear()
+        del attr
+    elif args.task=='z-score':
+        attr = readFieldInFile(args.input, nameList[0])
+        data = attr.convertDataToFloat()
+        zscore_attr = zScoreNorm(attr.convertDataToFloat())
+        print(zscore_attr)
+        result = [[nameList[0]]]
+        for i in zscore_attr:
+            result.append([i])
+        lenNameList = len(nameList)
+        i = 1
+        while(i < lenNameList):
+            attr = readFieldInFile(args.input, nameList[i])
+            zscore_attr = zScoreNorm(attr.convertDataToFloat())
+            result[0].append(nameList[i])
+            j = 1
+            for k in zscore_attr:
+                result[j].append(k)
+                j += 1
+            i += 1
+        writeFieldInFile(args.output,modifyDataToOutput(result))
+        attr.clear()
+        del attr
+    elif args.task=='normWidth':
+        data = readAllInFile(args.input)
+        norm_width=normalizationByWidth(data,nameList[0],args.width)        
+        result = norm_width.convertToOutput()        
+        lenNameList = len(nameList)
+        i = 1
+        while(i < lenNameList):
+            norm_width=normalizationByWidth(data,nameList[i],args.width) 
+            result[0].append(norm_width.name)
+            j = 1
+            for k in norm_width.data:
+                result[j].append(k)
+                j += 1
+            i += 1
+        writeFieldInFile(args.output,modifyDataToOutput(result))
+        norm_width.clear()
+        del norm_width
+    elif args.task=='normDepth':
+        data = readAllInFile(args.input)
+        norm_depth=normalizationByDepth(data,nameList[0],args.depth)        
+        result = norm_depth.convertToOutput()        
+        lenNameList = len(nameList)
+        i = 1
+        while(i < lenNameList):
+            norm_depth=normalizationByDepth(data,nameList[i],args.depth) 
+            result[0].append(norm_depth.name)
+            j = 1
+            for k in norm_depth.data:
+                result[j].append(k)
+                j += 1
+            i += 1
+        writeFieldInFile(args.output,modifyDataToOutput(result))
+        norm_depth.clear()
+        del norm_depth
+    elif args.task=='remove':
+        data = readAllInFile(args.input)
+        for i in nameList:
+            data=deleteMissingValue(data,i)
+        writeFieldInFile(args.output,modifyDataToOutput(data))
+    elif args.task=='insert':
+        data = readAllInFile(args.input)
+        for i in nameList:
+            data=insertMissingValue(data,i)
+        writeFieldInFile(args.output,modifyDataToOutput(data))   
+
+exit()
+
