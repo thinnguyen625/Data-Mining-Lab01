@@ -2,48 +2,71 @@ import sys
 import getopt
 import csv
 import re
-# import pandas as pd
-
-# def main(argv):
-#     inputfile = ''
-#     outputfile = ''
-#     try:
-#         opts,args = getopt.getopt(argv, "hi:o:", [
-#                              "help", "input=", "output=", "task=", "propList=", "bin="])
-#     except getopt.GetoptError:
-#         print('-h,--help (for more information)')
-#         sys.exit(2)
-#     for opt, arg in opts:
-#         if opt in ('-h', "--help"):
-#             print(
-#                 '1712713.py preprocess --input original.csv --output processed.csv --task remove --propList {id, name}')
-#             sys.exit()
-#         elif opt in ("-i", "--input"):
-#             inputfile = arg
-#         elif opt in ("-o", "--output"):
-#             outputfile = arg
-#         print('Input file is "', inputfile)
-#         print('Output file is "', outputfile)
 
 
-# if __name__ == "__main__":
-#     main(sys.argv[1:])
+def main(argv):
+    inputfile = ''
+    outputfile = ''
+    task=''
+    bin=''
+    nameList=''
+    try:
+        opts,args = getopt.getopt(argv, "hi:o:", [
+                             "help", "input=", "output=", "task=", "nameList=", "bin="])
+    except getopt.GetoptError:
+        print('-h,--help (for more information)')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ('-h', "--help"):
+            print(
+                '1712713.py preprocess --input original.csv --output processed.csv --task remove --nameList {id, name}')
+            sys.exit()
+        elif opt in ("-i", "--input"):
+            inputfile = arg
+        elif opt in ("-o", "--output"):
+            outputfile = arg
+        elif opt in ("-t","--task"):
+            task=arg
+        elif opt in ('-n',"--nameList"):
+            nameList=arg
+        elif opt in ('-b',"--bin"):
+            bin=arg
+    if task=='Min-Max':
+        result=readFieldInFile(inputfile,i)
+        for i in nameList:
+            attr=readFieldInFile(inputfile,i)
+            result=attr.convertToOutput()
+            
 
-def main():
-    file_name_in = 'original.csv'
-    file_name_out = "processed.csv"
-    input_filedname = "passenger_numbers"
-    data = readAllInFile(file_name_in)
-    dataOut = insertMissingValue(data, input_filedname)
-    writeFieldInFile(file_name_out, dataOut)
-    data.clear()
-    del data
+
+
+        
+
+
+
+
+# def main():
+#     file_name_in = 'original.csv'
+#     file_name_out = "processed.csv"
+#     input_filedname = "passenger_numbers"
+#     data = readAllInFile(file_name_in)
+#     dataOut = normalizationByWidth(data, input_filedname, 5)
+#     writeFieldInFile(file_name_out, dataOut.convertToOutput())
+#     data.clear()
+#     del data
+
 
 class Attribute:
     def __init__(self, name, data):
         self.name = name
         self.data = data
-
+    def addAttr(self,b):
+        lenMax = max(len(self.data),len(b.data))
+        result=[[self.name,b.name]]
+        for i in range(0,lenMax):
+            result.append([self.data[i],b.data[i]])
+        return result
+        
     def convertDataToFloat(self):
         result = []
         lenValid = 0
@@ -58,6 +81,12 @@ class Attribute:
         else:
             return None
 
+    def convertToOutput(self):
+        result = [[self.name]]
+        for i in self.data:
+            result.append([i])
+        return result
+
     def appendData(self, param):
         self.data.append(param)
         return True
@@ -67,6 +96,54 @@ class Attribute:
         self.data.clear()
         del self.data
 
+
+def rangeValid(field):
+    if field:
+        for i in field:
+            if i != '':
+                minField = i
+                maxField = i
+                break
+
+        for i in range(1, len(field)):
+            if field[i] != '':
+                if field[i] > maxField:
+                    maxField = field[i]
+                elif field[i] < minField:
+                    minField = field[i]
+        return maxField-minField
+    return None
+
+
+def minValid(field):
+    if field:
+        for i in field:
+            if i != '':
+                result = i
+                break
+
+        for i in range(1, len(field)):
+            if field[i] != '':
+                if field[i] < result:
+                    result = field[i]
+        return result
+    return None
+
+
+def maxValid(field):
+    if field:
+        for i in field:
+            if i != '':
+                result = i
+                break
+        for i in range(1, len(field)):
+            if field[i] != '':
+                if field[i] > result:
+                    result = field[i]
+        return result
+    return None
+
+
 def checkNumber(x):
     if x == '':
         return False
@@ -74,6 +151,7 @@ def checkNumber(x):
         if i not in '0123456789.':
             return False
     return True
+
 
 def writeFieldInFile(fileOutput, data):
     if data:
@@ -85,6 +163,7 @@ def writeFieldInFile(fileOutput, data):
         return True
     return None
 
+
 def modifyDataToOutput(data):
     result = data
     numRow = len(result)
@@ -93,6 +172,89 @@ def modifyDataToOutput(data):
             if type(result[i][j]) != str:
                 result[i][j] = repr(result[i][j])
     return result
+
+
+def normalizationByWidth(data, fieldName, numBox=1):
+    field = Attribute(fieldName, [])
+    indexField = data[0].index(fieldName)
+    for i in range(1, len(data)):
+        field.appendData(data[i][indexField])
+    floatField = field.convertDataToFloat()
+    rangeBox = rangeValid(floatField)/numBox
+    flag = []
+    start = minValid(floatField)
+    end = maxValid(floatField)
+    lenField = len(floatField)
+    while(start < end):
+        for i in range(0, lenField):
+            if i not in flag:
+                if floatField[i] != '':
+                    if floatField[i] >= start:
+                        if floatField[i] < (start+rangeBox):
+                            floatField[i] = '[' + \
+                                str(start)+','+str(start+rangeBox)+')'
+                            flag.append(i)
+                        elif (start+rangeBox) == end:
+                            floatField[i] = '[' + \
+                                str(start)+','+str(start+rangeBox)+']'
+                            flag.append(i)
+
+                else:
+                    flag.append(i)
+        start += rangeBox
+    field.clear()
+    del field
+    return Attribute(fieldName, floatField)
+
+
+def sortField(data):
+    if data:
+        field = []
+        for i in data:
+            if i != '':
+                field.append(i)
+        for i in range(0, len(field)-1):
+            if field[i] != '':
+                for j in range(i, len(field)):
+                    if field[j] != '':
+                        if field[j] < field[i]:
+                            temp = field[i]
+                            field[i] = field[j]
+                            field[j] = temp
+        return field
+    return None
+
+
+def normalizationByDepth(data, fieldName, numDepth=1):
+    field = Attribute(fieldName, [])
+    indexField = data[0].index(fieldName)
+    for i in range(1, len(data)):
+        field.appendData(data[i][indexField])
+    floatField = field.convertDataToFloat()
+    sortFloat = sortField(floatField)
+    flag = []
+    i = 0
+    k = 0
+    remain = len(sortFloat) % numDepth
+    start = sortFloat[i]
+    end = sortFloat[i+numDepth-1]
+    while i < len(sortFloat):
+        if k == numDepth:
+            k=0
+            if i+numDepth < len(sortFloat):
+                start = sortFloat[i]
+                end = sortFloat[i+numDepth-1]
+            else:
+                start = sortFloat[i]
+                end = sortFloat[i+remain-1]
+        indexItem = floatField.index(sortFloat[i])
+        floatField[indexItem] = '['+str(start)+','+str(end)+']'
+        k+=1
+        i+=1
+    field.clear()
+    del field
+    return Attribute(fieldName, floatField)
+
 
 def readFieldInFile(fileInput, fieldName):
     with open(fileInput, 'r') as readFile:
@@ -103,6 +265,7 @@ def readFieldInFile(fileInput, fieldName):
     readFile.close()
     return result
 
+
 def readAllInFile(fileInput):
     with open(fileInput, 'r') as readFile:
         csv_reader = csv.reader(readFile)
@@ -111,6 +274,7 @@ def readAllInFile(fileInput):
             result.append(row)
     readFile.close()
     return result
+
 
 def deleteMissingValue(data, fieldName):
     result = data
@@ -125,11 +289,12 @@ def deleteMissingValue(data, fieldName):
             i += 1
     return result
 
+
 def insertMissingValue(data, fieldName):
     result = data
     indexField = result[0].index(fieldName)
     attrData = Attribute(fieldName, [])
-    for i in range(1,len(data)):
+    for i in range(1, len(data)):
         attrData.appendData(data[i][indexField])
     meanData = mean(attrData.convertDataToFloat())
     if meanData:
@@ -144,6 +309,7 @@ def insertMissingValue(data, fieldName):
     attrData.clear()
     del attrData
     return result
+
 
 def frequence(data):
     freq = [[], []]
@@ -224,6 +390,5 @@ def stddev(data):
     return (variance(data))**0.5
 
 
-if __name__ == '__main__':
-    main()
-    exit()
+if __name__ == "__main__":
+    main(sys.argv[1:])
