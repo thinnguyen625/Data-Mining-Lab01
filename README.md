@@ -29,7 +29,7 @@ Lab01: Deadline 6/10
   c)
    python 19_B1.py  --input original.csv --output processed.csv --task normWidth --nameList [passenger_numbers] --width 4
   d)
-   python 19_B1.py  --input original.csv --output processed.csv --task normDepth --nameList [passenger_numbers,passenger_numbers] --depth 4
+   python 19_B1.py  --input original.csv --output processed.csv --task normDepth --nameList [passenger_numbers] --depth 4
   e)
    python 19_B1.py  --input original.csv --output processed.csv --task remove --nameList [passenger_numbers,Date]
   f)

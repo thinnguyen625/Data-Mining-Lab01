@@ -391,7 +391,6 @@ if args.input and args.output:
         attr = readFieldInFile(args.input, nameList[0])
         data = attr.convertDataToFloat()
         zscore_attr = zScoreNorm(attr.convertDataToFloat())
-        print(zscore_attr)
         result = [[nameList[0]]]
         for i in zscore_attr:
             result.append([i])
