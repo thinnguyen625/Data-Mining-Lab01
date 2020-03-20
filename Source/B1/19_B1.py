@@ -5,16 +5,11 @@ import re
 
 
 class Attribute:
-    """create a class hold an field in file csv
-          properties:
-             name: name of field
-             data: a list hold all value """
     def __init__(self, name, data):
         self.name = name
         self.data = data
 
     def convertDataToFloat(self):
-        """convert data in field if it is a number, else return None"""
         result = []
         lenValid = 0
         for i in self.data:
@@ -29,26 +24,22 @@ class Attribute:
             return None
 
     def convertToOutput(self):
-        """convert an Attribute object to data that can output in a file csv"""
         result = [[self.name]]
         for i in self.data:
             result.append([i])
         return result
 
     def appendData(self, param):
-        """insert a parameter to current data"""
         self.data.append(param)
         return True
 
     def clear(self):
-        """clear data of Attribute object"""
         del self.name
         self.data.clear()
         del self.data
 
 
 def rangeValid(field):
-    """caculate range of a field number"""
     if field:
         for i in field:
             if i != '':
@@ -67,7 +58,6 @@ def rangeValid(field):
 
 
 def minValid(field):
-    """return min of a number field, if '' in field, it's ignore"""
     if field:
         for i in field:
             if i != '':
@@ -83,7 +73,6 @@ def minValid(field):
 
 
 def maxValid(field):
-    """return max of a number field, if '' in field, it's ignore"""
     if field:
         for i in field:
             if i != '':
@@ -98,7 +87,6 @@ def maxValid(field):
 
 
 def checkNumber(x):
-    """check an string is a number or not"""
     if x == '':
         return False
     for i in x:
@@ -108,7 +96,6 @@ def checkNumber(x):
 
 
 def writeFieldInFile(fileOutput, data):
-    """write data to file csv"""
     if data:
         with open(fileOutput, mode='w', newline='') as writeFile:
             csv_writer = csv.writer(writeFile)
@@ -120,7 +107,6 @@ def writeFieldInFile(fileOutput, data):
 
 
 def modifyDataToOutput(data):
-    """convert all data to string"""
     result = data
     numRow = len(result)
     for i in range(0, numRow):
@@ -268,7 +254,6 @@ def insertMissingValue(data, fieldName):
 
 
 def frequence(data):
-    """tính tần số của một cột dữ liệu"""
     freq = [[], []]
     for j in data:
         if j != '':
@@ -349,7 +334,7 @@ def variance(data):  # hàm tính phương sai
     return d_sum/float(lenValid)
 
 
-def stddev(data):  # hàm tính độ lệch chuẩn
+def stddev(data):
     "Return standard deviation of sequence data."
     return (variance(data))**0.5
 
